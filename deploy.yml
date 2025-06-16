@@ -1,0 +1,7 @@
+- name: Déployer le site avec Ansible
+  hosts: webservers
+  tasks:
+    - name: Copier le fichier HTML
+      copy:
+        src: index.html
+        dest: /usr/share/nginx/html/index.html
